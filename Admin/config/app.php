@@ -19,6 +19,7 @@ $return_array = [
         Admin\Providers\RouteServiceProvider::class,
 
     ],
+    'asset_url' => env('ASSET_URL', 'http://localhost/notary/Admin/public/'),
 
 ];
 
