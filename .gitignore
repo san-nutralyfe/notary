@@ -17,5 +17,7 @@ Frontend/.env
 Admin/.env
 /*.result.cache
 /composer.phar
+/Frontend/storage/
 /Admin/storage/
 /Admin/bootstrap/cache/
+/Frontend/bootstrap/cache/
