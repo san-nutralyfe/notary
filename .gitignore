@@ -1,10 +1,10 @@
 /node_modules
 /Frontend/public/hot
 /Frontend/public/storage
-/Backend/public/hot
-/Backend/public/storage
+/Admin/public/hot
+/Admin/public/storage
 /Frontend/storage/*.key
-/Backend/storage/*.key
+/Admin/storage/*.key
 /vendor
 /.idea
 /.vscode
@@ -14,10 +14,10 @@ Homestead.yaml
 npm-debug.log
 yarn-error.log
 Frontend/.env
-Backend/.env
+Admin/.env
 /*.result.cache
 /composer.phar
 /Frontend/storage/
-/Backend/storage/
-/Backend/bootstrap/cache/
+/Admin/storage/
+/Admin/bootstrap/cache/
 /Frontend/bootstrap/cache/
