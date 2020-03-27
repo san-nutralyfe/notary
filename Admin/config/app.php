@@ -1,5 +1,4 @@
 <?php
-
 $return_array = [
 
     'name' => 'BackEnd',
@@ -19,7 +18,8 @@ $return_array = [
         Admin\Providers\RouteServiceProvider::class,
 
     ],
-    'asset_url' => env('ASSET_URL', 'http://localhost/notary/Admin/public/'),
+    'asset_url' => env('ASSET_URL', env('APP_URL').'/Admin/public'),
+    // 'asset_url' => app('url')->asset("public/".$path, $secure);
 
 ];
 
