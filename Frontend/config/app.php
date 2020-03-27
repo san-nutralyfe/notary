@@ -20,6 +20,7 @@ $return_array = [
         Frontend\Providers\RouteServiceProvider::class,
 
     ],
+    'asset_url' => env('ASSET_URL', env('APP_URL').'/Frontend/public'),
 
 ];
 

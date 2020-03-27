@@ -1,11 +1,12 @@
-@extends('layouts.app')
+@extends('layouts.common')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
+<div class="container" >
+    <div class="row justify-content-center loginparentcont">
+        <div class="col-sm-3"></div>
+        <div class="col-md-6 logincontainer" >
             <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
+                <!-- <div class="card-header">{{ __('Login') }}</div> -->
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
@@ -68,6 +69,7 @@
                 </div>
             </div>
         </div>
+        <div class="col-sm-3"></div>
     </div>
 </div>
 @endsection
