@@ -18,6 +18,10 @@ Route::post('admin-login', 'Auth\LoginController@Login');
 // Route::get('login', 'Auth\LoginController@login');
 
 
-// Route::get('/', 'login');
-Route::get('/Dashboard', 'MainPage');
+Route::group(['middleware' => 'auth:admin'], function()
+{
+    //All the routes that belongs to the group goes here
+	Route::get('/Dashboard', 'MainPage');
+	Route::get('/AddCategory', 'CatlogController@category');
+});
 
