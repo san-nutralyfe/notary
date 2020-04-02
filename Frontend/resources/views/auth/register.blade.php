@@ -1,13 +1,14 @@
-@extends('layouts.app')
+@extends('layouts.common')
 
 @section('content')
 <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
+    <div class="row justify-content-center regparentcont">
+        <div class="col-md-3"></div>
+        <div class="col-md-8 regcontainer">
             <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
+                <div class="card-header regcardheader">{{ __('Register') }}</div>
 
-                <div class="card-body">
+                <div class="card-body regcardbody">
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
 
@@ -72,6 +73,7 @@
                 </div>
             </div>
         </div>
+        <div class="col-md-1"></div>
     </div>
 </div>
 @endsection
